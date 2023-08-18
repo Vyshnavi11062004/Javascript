@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>table</title>
+</head>
+<body>
+	<table border="2">
+		<tr>
+			<th>course name</th>
+			<th>course number</th>
+			<th>course fees</th>
+			<th>place</th>
+		</tr>
+		<tbody>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+	<script type="text/javascript">
+		let courses =[
+		{
+			'name':'html',
+			'num': 23423,
+			'fees': 235,
+			'place': 'dwp'
+
+		},
+		{
+		     'name':'css',
+			'num': 65687,
+			'fees': 567,
+			'place': 'dwp'	
+		},
+		{   
+			'name':'javascript',
+			'num': 67845,
+			'fees': 7656,
+			'place': 'dwp'
+		}]
+         
+        let tab = document.getElementsByTagName('td');
+        /*tab[0].innerText = courses[0].name;
+        tab[1].innerText = courses[0].num;
+        tab[2].innerText = courses[0].fees;
+        tab[3].innerText = courses[0].place;
+        tab[4].innerText = courses[1].name;
+        tab[5].innerText = courses[1].num;
+        tab[6].innerText = courses[1].fees;
+        tab[7].innerText = courses[1].place;
+        tab[8].innerText = courses[2].name;
+        tab[9].innerText = courses[2].num;
+        tab[10].innerText =courses[2].fees;
+        tab[11].innerText = courses[2].place;
+      */
+      for(var i=0 ; i<tab.length; i++)
+        {
+        	tab[0].innerText = courses[0].name;
+        	tab[1].innerText = courses[0].num;
+        	tab[2].innerText = courses[0].fees;
+        	tab[3].innerText = courses[0].place;
+        
+        }
+        
+	</script>
+
+</body>
+</html>

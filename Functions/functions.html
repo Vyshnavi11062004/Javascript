@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Functions</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//functionkeyword functionname(arg1,arg2,...argn)
+		//{
+			//statements
+			//return statement
+
+		//}
+		//normal function with no parameters
+		/*function test(){
+			alert("testing")
+			document.write("testing success");
+		}*/
+		//test()// calling the function
+//--------------------------------------------------------------------
+		//function with one parameter
+		//function jen(a='vyshu')
+		//{
+			//document.write(a)
+		//}
+		//jen()
+
+		/*var a = prompt("scan your is here");
+		function scanyourid(rollno)
+		{
+			document.write(a);
+		}
+		scanyourid(a)*/
+//------------------------------------------------------------------------------------------
+		/*function arithematic(a,b)*/ // we can also assign the value here like a=0,b=10
+		/*{
+			document.write(eval(a+b)+"<br>")
+			document.write(eval(a-b)+"<br>")
+			document.write(eval(a*b)+"<br>")
+			document.write(eval(a/b)+"<br>")
+		}
+		arithematic(5,4)*/
+
+//------------------------------------------------------------------------------------------
+		/*function arithematic(a,b) 
+		{
+             var a =parseInt(prompt("enter a value"));
+             var b =parseInt(prompt("enter b value"));
+			document.write(eval(a+b)+"<br>")
+			document.write(eval(a-b)+"<br>")
+			document.write(eval(a*b)+"<br>")
+			document.write(eval(a/b)+"<br>")
+		}
+		arithematic()
+		*/
+
+//------------------------------------------------------------------------------------------
+        //anonymous function -- function without  the function name
+		/*var x = function(a,b)
+		{
+            return a*b
+		}
+		document.write(x(2,5))
+*/
+//------------------------------------------------------------------------------------------   
+         /*var y = function(a)
+         {
+         	return a*a*a
+         }
+         document.write(y(5))*/
+//------------------------------------------------------------------------------------------
+         //es6 arrow functions "=>" we never use function keyword
+         //arrow function with 2 arguments
+         /*add = (a,b) => {
+         	document.write(a+b)
+         }
+         add(10,20)*/
+
+//------------------------------------------------------------------------------------------       
+         //arrow function with one argument
+         //getname = a => {   //if we give one argument then we can also display the ouput without the paranthasis getname=a directly
+         //	document.write(a)
+         //}
+         //getname('vyshu')
+//------------------------------------------------------------------------------------------
+            // arrow function with no arguments
+            //test = () =>{                  // we can use _ or parenthasis
+            	//document.write("testing")
+            //}
+            //test()
+//--------------------------------------------------------------------------------------------
+
+//setTimeout function
+			/*setTimeout(function(){
+				document.write("enables after 2 secs")   //one way
+			},2000)*/
+
+			//call back function
+			//setTimeout(test1,2000)
+			//function test1(){                  //another way
+				//document.write("enables after 2 secs")
+			//}
+//--------------------------------------------------------------------------------------------
+	</script>
+
+</body>
+</html>

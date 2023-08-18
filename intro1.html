@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		/*var name='vyshu'
+		document.write(name);
+		name='  siri'
+		document.write(name);
+		document.write(",");
+		name='swetha'
+		document.write(name);*/
+
+		//var a=10;
+		//document.write(typeof(a)+"<br>");
+		//var name='vysh';
+		//document.write(typeof(name)+"<br>");
+		//var b=10.23;
+		//document.write(typeof(b)+"<br>"); /*any float,double,number will be displayed as number only*/
+		//var c;
+		//document.write(typeof(c)); //default value
+
+		//var e;
+		//e +='vyshu';
+		//document.write(e+"<br>"); //undefinedvyshu because of +
+		//var e;
+		//e ='vyshu';
+		//document.write(e); //vyshu
+
+		//var a=10;
+		//var name='sim';
+		//var g='true';
+		//document.write(typeof(g));  // single quotes means it will display string -- without single quotes it will display boolean
+
+		//var arr = ['vyshu','swetha','siri'];//,1,true];
+		//document.write(typeof(arr)); //it will display object;
+		//document.write(arr); // it will display all kinds of data types in javascript
+        //document.write(arr[2]); it will give siri but we want swetha
+        //console.log(arr); //we should see index in the console acc to that we should give the index
+        //document.write(arr[1]); //swetha is at index 1 in the console
+
+         //var arr=['vyshu',1,true,'som'];
+         //console.log(arr);
+         //document.write(arr[1]+" "+arr[2]);
+
+         //object
+         //var trainee = {
+         	//'name':'hari',
+         	//'rollno':1234,
+         	//'college':'AEC',
+         	//'branch':'CSE'
+         //}
+         //console.log(trainee.name, trainee.rollno,trainee.college,trainee.branch);
+         //console.log(trainee.name);
+         //console.log(trainee.rollno);
+         //console.log(trainee.college);
+         //console.log(trainee.branch);
+         //document.write(trainee); //it will give object object first is name second is key value we should give particular value like trainee.name then it will display
+
+
+/*var trainees = [{
+         	'name':'hari',
+         	'rollno':1234,
+         	'college':'AEC', */  /*to display two records at a time we should give in arrays */
+         	/*'branch':'CSE'
+            },
+            {
+            	'name':'kiran',
+         		'rollno':5678,
+         		'college':'ACET',
+         		'branch':'EEE'
+            }]
+            console.log(trainees);
+            console.log(trainees[0].name);
+            console.log(trainees[0].rollno);
+            console.log(trainees[0].college);
+            console.log(trainees[0].branch);
+            console.log(trainees[1].name);
+            console.log(trainees[1].rollno);
+            console.log(trainees[1].college);
+            console.log(trainees[1].branch);*/
+
+var stu = [{
+			'name':'hari',
+         	'rollno':1234,
+         	'college':'AEC',
+			'branch':'CSE'
+},
+{
+			'name':'kiran',
+         	'rollno':456,
+         	'college':'ACET',
+			'branch':'EEE'
+
+},
+{
+			'name':'krishna',
+         	'rollno':4258,
+         	'college':'AEC',
+			'branch':'CE'
+},
+{
+			'name':'kittu',
+         	'rollno':7845,
+         	'college':'AEC',
+			'branch':'IT'
+},
+{
+			'name':'lavanya',
+         	'rollno':8459,
+         	'college':'ACET',
+			'branch':'AIML'
+}];
+for(let i=0; i<stu.length;i++)  //length is 5 , acc to index 4
+{
+	//console.log(stu[i]); //it will diplay all the records 
+	//console.log(i+1,stu[i].name,stu[i].rollno,stu[i].college,stu[i].branch);  //we'll get space auto in console
+	for (key in stu[i]) 
+	{
+				document.write(stu[i][key]+" ") //without using key values displaying dynamically
+				document.write("<br>"); 
+    }
+    document.write("<br>"); 
+	//console.log(stu[i].rollno); if we want to display in new rows we should give in new line
+	//i+1 to get strings with single quotes
+
+	//document.write(i+1,stu[i].name,stu[i].rollno,stu[i].college,stu[i].branch); //same in document.write
+	//document.write("<br>");
+}
+
+
+
+	</script>
+
+</body>
+</html>

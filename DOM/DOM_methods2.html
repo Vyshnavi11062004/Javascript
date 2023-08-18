@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM methods</title>
+</head>
+<body>
+    <p class="topic">HTML</p>
+    <p class="topic">CSS</p>
+    <p class="topic">BS</p>
+    <p class="topic">JS</p>
+    <p>hi</p>
+    <div>hello</div>
+    <h2>HEY</h2>
+    <ul>
+    	<li>AEC</li>
+    	<li>ACET</li>
+    	<li>ACOE</li>
+    </ul>
+    <script type="text/javascript"> // when we use classname, tagname we should use index format
+    	/*let paras = document.getElementsByClassName('topic');
+    	console.log(paras);
+    	paras[0].innerHTML = 'hyper text markup language';
+        paras[2].innerHTML = 'Boot Strap';*/
+
+        /*let lis = document.getElementsByTagName('li');
+        console.log(lis)
+        lis[0].innerText = 'Aditya Engineering College';*/
+
+         let ps = document.querySelector('.topic');  //for only changing first value in the class without uisng index concept , if we want to change all the values then we should use index concept,--> we use dot in classname
+         ps.innerText = 'Hyper text markup language'
+
+         let lis= document.querySelector('li'); //we dont use dot in TagName
+         lis.innerText = 'aditya college'
+
+         const n = document.querySelectorAll("h2, div") //for applying styles at a time to different tags
+         for(let i=0; i<n.length; i++)
+         {
+         	n[i].style.backgroundColor = "red";
+         }
+</script>
+</body>
+</html>
