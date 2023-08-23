@@ -11,26 +11,7 @@
 			<th>course fees</th>
 			<th>place</th>
 		</tr>
-		<tbody>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-		</tbody>
+		<tbody id="tbodyid"></tbody>
 	</table>
 	<script type="text/javascript">
 		let courses =[
@@ -53,9 +34,9 @@
 			'fees': 7656,
 			'place': 'dwp'
 		}]
-         
+        /* 
         let tab = document.getElementsByTagName('td');
-        /*tab[0].innerText = courses[0].name;
+        tab[0].innerText = courses[0].name;
         tab[1].innerText = courses[0].num;
         tab[2].innerText = courses[0].fees;
         tab[3].innerText = courses[0].place;
@@ -66,16 +47,32 @@
         tab[8].innerText = courses[2].name;
         tab[9].innerText = courses[2].num;
         tab[10].innerText =courses[2].fees;
-        tab[11].innerText = courses[2].place;
-      */
-      for(var i=0 ; i<tab.length; i++)
+        tab[11].innerText = courses[2].place;*/
+
+        for(i=0;i<=courses.length-1;i++)
         {
-        	tab[0].innerText = courses[0].name;
-        	tab[1].innerText = courses[0].num;
-        	tab[2].innerText = courses[0].fees;
-        	tab[3].innerText = courses[0].place;
-        
+        	 let tr = document.createElement('tr')
+        	 let td1 = document.createElement('td')
+        	 let td2 = document.createElement('td')
+        	 let td3 = document.createElement('td')
+        	 let td4 = document.createElement('td')
+        	 td1.innerText =courses[i].name
+        	 td2.innerText =courses[i].num
+        	 td3.innerText =courses[i].fees
+        	 td4.innerText =courses[i].place
+        	 tr.append(td1)
+        	 tr.append(td2)
+        	 tr.append(td3)
+        	 tr.append(td4)
+        	 //console.log(tr)
+        	 document.getElementById('tbodyid').append(tr)
+        	 
+
+
+
         }
+      
+      
         
 	</script>
 
