@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		<label>Enter Name</label>
+	<input type="text" name="fname" id="ins_id" onkeyup ="checkform()" style="outline: none;">
+	<p id="p2"></p>
+	<br><br>
+	</form>
+	<script type="text/javascript">
+	function checkform() {
+		if (document.getElementById("ins_id").value =='') {
+			let para1= document.getElementById('p2').innerText='Please Enter Name';
+			document.getElementById('p2').style.color='red';
+			let ins = document.getElementById('ins_id').style.border='2px solid red';
+			
+		}
+		else
+		{
+			document.write(fname);
+		}
+}
+</script>
+
+</body>
+</html>

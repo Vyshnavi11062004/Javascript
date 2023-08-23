@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Handler</title>
+</head>
+<body>
+	<!-- inline event handler -->
+	<!-- <button onclick="alert('testing')">Click here</button>  -->
+	<!-- event handler using javascript properties 2nd way
+	<button onclick="test()">Click here</button>-->
+	<!-- <script type="text/javascript"> -->
+		<!-- function test(){
+			alert("testing...")
+			document.body.style.background = 'red'
+		}
+		</script>
+------------------------------------------------------------------------------------
+       another example in 2nd way (anonymus function name) -->
+       <!--<button onclick="test()">Click here</button>-->
+       <!-- <script type="text/javascript">
+       let btn = document.getElementById('btn_id');
+       btn.onclick=function(){
+       	alert("hi")
+       	document.body.style.background = 'green'
+       }
+	</script>
+ -->
+
+ <!-- --------------------------------------------------------------------------------------
+  3rd way -->
+  <button onclick="test()">Click here</button>
+  <script type="text/javascript">
+
+  let btn = document.getElementById('btn_id');
+  btn.addEventListener('click',test)
+  function test(){
+  	alert("testing")
+  	document.body.style.background='red'
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<!-- <button onclick="showdiv()">Show</button>
+	<button onclick="hidediv()">Hide</button>
+	<div id="div_id">Full Stack FN batch</div>
+	 <script type="text/javascript">
+       function showdiv(){
+
+             document.getElementById("div_id").style.display='block'
+              
+       }
+	
+		function hidediv(){
+			document.getElementById("div_id").style.display='none'
+			
+		}
+	</script> -->
+	<!-- <center>
+	<button onclick="incrby1()">Inc</button>
+	<button onclick="decrby1()">Dec</button>
+	<p>OUTPUT:</p>
+	<p id="output_id"></p>
+</center>
+	<script type="text/javascript">
+		var i=1;
+		function incrby1()
+		{
+			if (i<6) {
+				var res = i++;
+				document.getElementById('output_id').innerText = res
+			}
+		}
+		function decrby1()
+		{
+			if (i>0) {
+				var res = i--;
+				document.getElementById('output_id').innerText = i--
+			}
+		}
+
+	</script> -->
+	<center>
+	<button onclick="nextslide()">Next</button>
+	<button onclick="prevslide()">Prev</button>
+	<p>Slider images</p>
+	<div id="output_id"></div>
+</center>
+	<script>
+		var i=2;
+		function nextslide()
+		{
+			if (i<6) {
+				var res = i++;
+				document.getElementById('output_id').innerText = "<img src='"+res+".jpg' style='width : 200px;height:200px'/>"
+			}
+		}
+		function prevslide()
+		{
+			if (i>0) {
+				var res = i--;
+				if(res!=6){
+				document.getElementById('output_id').innerText = res+".jpg"
+			}
+		}
+
+	</script>
+
+</body>
+</html>

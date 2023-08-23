@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The onmouseover Event</h2>
+
+<img onmouseover="fullImg(this)" onmouseout="halfImg(this)" border="0" src="sliders/on.jpg"  width="400" height="400" id="output_id">
+
+<script>
+function fullImg(x) {
+  document.getElementById('output_id').src='sliders/off.jpg'
+}
+
+function halfImg(x) {
+	document.getElementById('output_id').src='sliders/on.jpg'
+  
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<center><h1><u>Select One Number</u></h1></center>
+<body>
+	<center>
+<input type="radio" name="1" id="1_id" value="1">1
+<input type="radio" name="2" id="2_id" value="2">2
+<input type="radio" name="3" id="3_id" value="3">3
+<input type="radio" name="4" id="4_id" value="4">4
+<input type="radio" name="5" id="5_id" value="5">5<br><br>
+<!-- <h1>You selected number:  </h1>
+ --><button id="submitGuess" value="Check My Guess" onclick="checkGuess()">Play Game</button><br><br>
+<input type="number" name="" id="guess">
+</center>
+<script type="text/javascript">
+	
+    const randomNumber = Math.floor(Math.random() * 100) + 1
+    console.log('Random Number', randomNumber)
+
+    function checkGuess() {
+      let myGuess = guess.value
+      if (myGuess === randomNumber) {
+        feedback.textContent = "You got it right!"
+      } else if (myGuess > randomNumber) {
+        feedback.textContent = "Your guess was " + myGuess + ". That's too high. Try Again!"
+      } else if (myGuess < randomNumber) {
+        feedback.textContent = "Your guess was " + myGuess + ". That's too low. Try Again!"
+      }
+    }
+    submitGuess.addEventListener('click', checkGuess)
+
+</script>
+</body>
+</html>

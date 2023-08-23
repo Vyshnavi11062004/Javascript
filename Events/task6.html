@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Enter some text in the fields below, then press the "Submit form" button to submit the form.</p>
+
+<form id="myForm" >
+  First name: <input type="text" name="fname" id="fname_id"><br><br>
+  Last name: <input type="text" name="lname" id="lname_id"><br><br>
+  password: <input type="password" name="Pwd" id="pwd_id"><br><br>
+  <select name="colleges" id="clg_id">
+  	<option value="">--select colleges ---</option>
+  	<option value="AEC">AEC</option>
+  	<option value="ACET">ACET</option>
+  	<option value="ACOE">ACOE</option>
+  </select><br><br>
+  Comments:<textarea  cols ="55" name="Comment" id="com_id"></textarea><br><br>
+  Choose Your Gender:<br>
+  <input type="radio" name="gen" id="male_id" value="male">male<br>   
+                      <input type="radio" name="gen" id="female_id" value="female_id">female<br>  <br>
+  Languages Known:<br>
+  <input type="checkbox" name="JAVA" id="java_id">JAVA
+  <input type="checkbox" name="python" id="python_id">python
+  <input type="checkbox" name="C" id="c_id">C
+  <input type="checkbox" name="c++" id="c++_id">c++<br><br>
+  <input type="button" onclick="formsubmit()" value="Submit form">
+   
+
+</form>
+
+<script> 
+    function formsubmit(){
+      let form = document.getElementById('myForm');
+      form.submit();
+      form.reset();
+    }
+
+
+</script>
+
+</body>
+</html>

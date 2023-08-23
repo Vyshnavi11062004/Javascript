@@ -1,0 +1,83 @@
+<html>
+  <body>
+    <style type="text/css">
+      *{
+          box-sizing: border-box
+        }
+
+        .image-slideshow {
+         max-width: 1000px;
+        position: relative;
+        margin: auto;
+        }
+
+        img {
+               width: 100%
+            }
+
+        .fade {
+              animation-name: fade;
+              animation-duration: 2s;
+              }
+
+        @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+        }
+    </style>
+
+    <div class="image-slideshow">
+
+      <div class="image fade">
+      <img src="sliders/1.avif" height="500px" width="1000px">
+      </div>
+        
+      <div class="image fade">
+      <img src="sliders/2.avif" height="500px" width="1000px">
+      </div>
+        
+      <div class="image fade">
+      <img src="sliders/3.avif" height="500px" width="1000px">
+      </div>
+
+      <div class="image fade">
+      <img src="sliders/4.avif" height="500px" width="1000px">
+      </div>
+
+    </div>
+    <script>
+      /*let imgg = document.getElementsByClassName('image-slideshow');
+      document.getElementsByClassName('image-slideshow').style.maxWidth = '1000px';
+      document.getElementsByClassName('image-slideshow').style.position = 'relative';
+      document.getElementsByClassName('image-slideshow').style.margin = 'auto';
+
+      let fade= document.getElementsByClassName('imagefade');
+      document.getElementsByClassName('imagefade').style.animation-name = 'fade';
+      document.getElementsByClassName('imagefade').style.animation-duration = '2s';
+      
+      let img = document.getElementsByTagName('img');
+      document.getElementsByTagName('img').style.width = '100%';
+*/
+
+      
+
+
+      let index = 0;
+      displayImages();
+      function displayImages() {
+      let i;
+      const images = document.getElementsByClassName("image");
+      for (i = 0; i < images.length; i++) {
+      images[i].style.display = "none";
+      }
+      index++;
+      if (index > images.length) {
+      index = 1;
+      }
+      images[index-1].style.display = "block";
+      setTimeout(displayImages, 2000); 
+}
+      
+    </script>
+  </body>
+</html>
