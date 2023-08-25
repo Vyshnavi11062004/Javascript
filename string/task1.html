@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task</title>
+</head>
+<body>
+	<input type="text" placeholder="find the word" id="search_id" />
+	<button onclick="getcnt()">Check count</button>
+	<p  id="output_id"></p>
+	<br>
+	<script type="text/javascript">
+		function getcnt()
+		{
+			let arr = ['ravi', 'raju','ravi','kiran'];
+		var search_val = document.getElementById('search_id').value;
+		let cnt = 0;
+		for (var i =0; i<arr.length ; i++) 
+		{
+			if(arr[i].includes(search_val)==true)
+			{
+				cnt = cnt + 1;
+			}
+		    //document.write(arr[i]+"<br>")
+		     let para = document.getElementById('output_id').innerHTML='count='+cnt; //my way
+		     //document.getElementById('output_id').innerText = cnt; //sir way
+		}
+		
+	}
+		
+	</script>
+
+</body>
+</html>

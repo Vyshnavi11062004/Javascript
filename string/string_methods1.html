@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS | String Methods</title>
+</head>
+<body>
+	<h2>String Methods</h2>
+	<table border="1" cellspacing="0">
+		<tr>
+			<td>d</td>
+			<td>r</td>
+			<td>i</td>
+			<td>v</td>
+			<td>e</td>
+			<td>&nbsp;</td>
+			<td>r</td>
+			<td>e</td>
+			<td>a</td>
+			<td>d</td>
+			<td>y</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>		
+		</tr>
+		<tr>
+			<td>-11</td>
+			<td>-10</td>
+			<td>-9</td>
+			<td>-8</td>
+			<td>-7</td>
+			<td>-6</td>
+			<td>-5</td>
+			<td>-4</td>
+			<td>-3</td>
+			<td>-2</td>
+			<td>-1</td>		
+		</tr>
+	</table><br>
+	<script>
+		function getstr(str){
+			document.write("<b>"+str+"</b><br>");
+		}
+		let name = 'drive ready';
+		getstr("Original String = " +name)
+		getstr("String Length = " +name.length) //find the length of the string - length==output:11 inlcuding space
+		getstr("Char At = "+name.charAt(2)) //by using index  finding the character
+		getstr("Index Of = " +name.indexOf('v')) //by using character finding the index
+		getstr("Index Of 2nd Way="+name.indexOf('ready')) //the position of the first letter will be displayed 
+		getstr("Last Index of the String="+name.lastIndexOf('r')) //if we have multiple characters in the string we use this to return the postion of last character
+
+		let name1 = 'DRIVE READY';
+		getstr(name1);
+		getstr("To  LowerCase=" +name1.toLowerCase())
+		getstr("To  UpperCase=" +name1.toUpperCase())
+		let name2 = ' Batch';
+		let name3 = 'FN';
+		let name4 = 'FSD';
+		getstr("concate of String="+name1.concat(name2))
+		getstr("concate of String="+name1.concat(name2,name3,name4))
+		let username = ' Vyshnavi'
+		getstr("Trim Method = "+username.trim()) //removes the spaces from left and right
+
+		//converting string to array => stringname.split()
+		//console.log(name.split("")); //we should use console.log for arrays
+		let name5 = 'Raju&Ravi,Ram';
+		console.log(name5.split("&")); //['Raju', 'Ravi,Ram']
+		console.log(name5.split(",")); //['Raju&Ravi', 'Ram']
+		let name6 = 'vyshnavi';
+		console.log(name6.startsWith('v'));  //true
+		console.log(name6.startsWith('b')); //false
+		console.log(name6.endsWith('i')); //true
+		console.log(name6.endsWith('o')); //false
+
+		//slice method
+		getstr("slice of string="+name.slice(1,4)); //1,(4-1)
+		getstr("slice of string="+name.slice(-3)); //-2,-1
+		getstr("slice of string="+name.slice(-4,-2)); //-4 , (-2-1)=-3 
+
+		//substring method
+		//it is allowing the positive indexes only no negative indexes are allowed
+		getstr("substring of string="+name.substring(1,5)); //(1,5)
+		getstr("substring of string="+name.substring(5,1)); // it also converts to (1,5)//1st value should be less, second value should be greater
+		getstr("substring of string="+name.substring(-1)); //complete string will be displayed
+
+		//substr method
+		//syntax: (start pos, length of the characters from first position)
+		getstr("substring of string="+name.substr(0,4)); //driv will print bcoz from 0 , 1234 letters means driv
+		//getstr("substring of string="+name.substr(2,6)); //from 2 postion it will take 6 letters first pos included as 1st
+		//getstr("substring of string="+name.substr(6,1)); //it will print only first value, it will not reverse the values like substring method
+
+
+	   //includes method
+	   //getstr('includes of string='+name.includes('ready')) //we should use this to find whether the word is in the string or not
+	   //if(name.includes('batch')==true){
+
+	   //}else{
+
+	   //}
+
+	   //charCodeAt method --for finding the ascii code values
+	   //getstr('charCodeAt of string=' +name.charCodeAt('r'));
+
+	   //repeat method
+	    getstr( "repeat of string =" +name4.repeat(2));
+
+	    //replace method
+	    getstr("replace of string = "+name.replace('ready','course')); //in drive ready, ready is replaced with course 
+       
+	</script>
+</body>
+</html>
